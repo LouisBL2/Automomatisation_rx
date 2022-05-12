@@ -1,0 +1,27 @@
+{
+    "hostname":"R2",
+    "interfaces":[
+        {
+            "name":"gi2/0.10",
+            "description": "Gateway interface for teacher LAN",
+            "ip":"172.16.10.253",
+            "mask":"255.255.255.0",
+            "vlan_id":"10",
+            "vrrp_id":"1",
+            "vrrp_vip":"172.16.10.252",
+            "vrrp_priority":"90"
+            
+
+        },
+        {
+            "name":"gi2/0.20",
+            "description": "Gateway interface for teacher LAN",
+            "ip":"172.16.20.253",
+            "mask":"255.255.255.0",
+            "vlan_id":"20",
+            "vrrp_id":"1",
+            "vrrp_vip":"172.16.20.252",
+            "vrrp_priority":"90"
+        }
+    ]
+}

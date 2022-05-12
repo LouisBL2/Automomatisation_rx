@@ -1,0 +1,30 @@
+{
+    "interfaces":[
+       {
+          "name":"fa1/1",
+          "mode":"access",
+          "vlan_id":"10"
+       },
+       {
+          "name":"fa1/2",
+          "mode":"access",
+          "vlan_id":"20"
+       },
+       {
+          "name":"fa1/0",
+          "mode":"trunk"
+       }
+    ],
+
+    "vlans":[
+      {
+         "vlan_id":"10"
+      },
+      {
+         "vlan_id":"20"
+      }
+
+
+    ]
+
+ }

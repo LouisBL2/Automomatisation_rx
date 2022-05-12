@@ -1,0 +1,38 @@
+{
+    "interfaces":[
+       {
+          "name":"fa1/1",
+          "mode":"access",
+          "allowed_vlan":"10"
+       },
+       {
+          "name":"fa1/2",
+          "mode":"access",
+          "allowed_vlan":"20"
+       },
+       {
+          "name":"fa1/14",
+          "mode":"trunk",
+          "allowed_vlan":"20,10,99"
+       },
+       {
+        "name":"fa1/15",
+        "mode":"trunk",
+        "allowed_vlan":"20,10,99"
+        }
+    ],
+
+    "vlans":[
+      {
+         "id":"10",
+         "name":"VLAN10"
+      },
+      {
+         "id":"20",
+         "name":"VLAN20"
+      }
+
+
+    ]
+
+ }

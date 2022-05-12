@@ -1,0 +1,1048 @@
+2022-04-24 18:28:01,426 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2022-04-24 18:28:07,255 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2022-04-24 18:29:07,503 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2022-04-24 18:29:21,508 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2022-04-24 18:34:25,205 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 3 hosts
+2022-04-24 18:34:25,211 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:37:10,427 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:37:10,435 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-04-24 18:37:39,025 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:37:39,034 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-04-24 18:41:27,661 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:41:45,072 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:42:27,495 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:42:27,503 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-04-24 18:42:35,011 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:42:35,020 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-04-24 18:43:08,394 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:43:08,403 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 1 hosts
+2022-04-24 18:43:27,175 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:43:27,183 -  nornir.core -  WARNING -        run() - Task 'hello_world' has not been run – 0 hosts selected
+2022-04-24 18:43:32,951 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:43:32,958 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:44:05,125 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:44:05,135 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:44:11,928 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-04-24 18:44:11,937 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:44:21,517 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:44:26,153 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 2 hosts
+2022-04-24 18:44:34,093 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-04-24 18:49:04,576 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show ip int br']} on 4 hosts
+2022-04-24 18:49:04,626 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 172.16.100.189
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 172.16.100.189:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 172.16.100.189
+
+2022-04-24 18:49:04,628 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'napalm_cli' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 935, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/paramiko/client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 172.16.100.190
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/base/base.py", line 86, in _netmiko_open
+    self._netmiko_device = ConnectHandler(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/ssh_dispatcher.py", line 326, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/cisco/cisco_ios.py", line 17, in __init__
+    return super().__init__(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 350, in __init__
+    self._open()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 355, in _open
+    self.establish_connection()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 957, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.ssh_exception.NetmikoTimeoutException: TCP connection to device failed.
+
+Common causes of this problem are:
+1. Incorrect hostname or IP address.
+2. Wrong TCP port.
+3. Intermediate firewall blocking access.
+
+Device settings: cisco_ios 172.16.100.190:22
+
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_cli.py", line 19, in napalm_cli
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 169, in open
+    self.device = self._netmiko_open(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/base/base.py", line 95, in _netmiko_open
+    raise ConnectionException("Cannot connect to {}".format(self.hostname))
+napalm.base.exceptions.ConnectionException: Cannot connect to 172.16.100.190
+
+2022-04-24 18:53:00,674 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show ip int br']} on 4 hosts
+2022-04-24 18:54:18,126 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['arp_table']} on 6 hosts
+2022-04-24 18:54:45,489 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['arp_table']} on 2 hosts
+2022-04-24 18:58:57,355 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-04-24 18:58:57,357 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int loopback 1\n ip add 2.2.2.2 255.255.255.255'} on 1 hosts
+2022-04-24 18:59:59,805 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-04-24 18:59:59,807 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int loopback 1\n ip add 2.2.2.2 255.255.255.255'} on 1 hosts
+2022-04-24 19:01:02,031 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-04-24 19:01:02,033 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int loopback 1\n ip add 2.2.2.2 255.255.255.255'} on 1 hosts
+2022-04-24 19:01:55,034 -  nornir.core -  WARNING -        run() - Task 'napalm_configure' has not been run – 0 hosts selected
+2022-04-24 19:02:20,801 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int loopback 1\n ip add 1.1.1.1 255.255.255.255'} on 1 hosts
+2022-04-24 19:04:27,578 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['write']} on 6 hosts
+2022-04-24 19:08:34,226 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:09:27,080 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 3 hosts
+2022-04-24 19:09:44,382 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:12:14,252 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:12:31,396 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:15:14,887 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:15:24,071 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:16:28,356 -  nornir.core -  WARNING -        run() - Task 'netmiko_send_command' has not been run – 0 hosts selected
+2022-04-24 19:16:38,533 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 4 hosts
+2022-04-24 19:21:39,533 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 4 hosts
+2022-04-24 19:21:57,438 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int loopback 1', 'ip add 1.1.1.2 255.255.255.255']} on 1 hosts
+2022-04-24 19:21:58,314 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int loopback 1', 'ip add 2.2.2.3 255.255.255.255']} on 1 hosts
+2022-04-24 19:23:11,646 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 1 hosts
+2022-04-24 19:23:12,867 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 1 hosts
+2022-04-24 19:30:41,295 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:32:01,238 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:32:02,746 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:32:08,223 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:36:39,944 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:36:41,296 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:36:46,345 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:36:54,702 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:36:55,483 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:36:59,569 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:37:35,476 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:37:36,906 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:37:41,631 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:37:49,646 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:37:52,835 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:37:52,844 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:37:56,338 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:37:56,347 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:39:38,290 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:39:39,777 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:39:44,999 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_A.conf'} on 1 hosts
+2022-04-24 19:40:52,676 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:40:56,082 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:40:56,085 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:40:59,447 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:40:59,457 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:42:10,884 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:42:14,124 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:42:14,130 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:42:17,739 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:42:17,748 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:43:36,491 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:43:39,667 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:43:39,677 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:43:42,903 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:43:42,915 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:45:42,503 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:45:45,848 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:46:01,657 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:46:33,473 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:46:36,742 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:46:48,044 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:46:52,045 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-04-24 19:47:58,963 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:48:16,522 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:50:25,874 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:51:20,559 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_CPE_LYON_BAT_B.conf'} on 1 hosts
+2022-04-24 19:52:26,917 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 6 hosts
+2022-04-24 19:58:35,363 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.10.0 0.0.0.255 area 0', 'network 172.16.20.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:58:36,218 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.10.0 0.0.0.255 area 0', 'network 172.16.20.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:58:38,282 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.30.0 0.0.0.255 area 0', 'network 172.16.40.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:58:38,459 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.30.0 0.0.0.255 area 0', 'network 172.16.40.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:58:39,368 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 6 hosts
+2022-04-24 19:59:22,768 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.10.0 0.0.0.255 area 0', 'network 172.16.20.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:59:23,579 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.10.0 0.0.0.255 area 0', 'network 172.16.20.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:59:25,008 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.30.0 0.0.0.255 area 0', 'network 172.16.40.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:59:27,662 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['router ospf 1', 'network 172.16.30.0 0.0.0.255 area 0', 'network 172.16.40.0 0.0.0.255 area 0']} on 1 hosts
+2022-04-24 19:59:30,423 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 6 hosts
+2022-05-11 09:22:06,565 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:24:47,977 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:12,828 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:49,257 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:49,260 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:49,261 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:49,263 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:59,001 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:59,002 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:25:59,003 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:36:29,629 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:38:18,029 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:38:18,037 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:39:03,948 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 09:39:03,956 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-05-11 09:39:52,825 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-05-11 09:56:06,421 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show ip interface brief']} on 6 hosts
+2022-05-11 10:08:36,553 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['']} on 2 hosts
+2022-05-11 10:08:37,909 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-A': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_'
+
+2022-05-11 10:08:38,489 - nornir.core.task -    ERROR -      start() - Host 'ESW1-CPE-BAT-B': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 43, in napalm_get
+    method = getattr(device, getter)
+AttributeError: 'IOSDriver' object has no attribute 'get_'
+
+2022-05-11 10:09:20,472 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_arp_table']} on 2 hosts
+2022-05-11 10:30:43,405 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': ['int lo 1, ip address 1.1.1.1, mask 255.255.255.0']} on 1 hosts
+2022-05-11 10:30:44,556 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 269, in _load_candidate_wrapper
+    tmp_file = self._create_tmp_file(source_config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 244, in _create_tmp_file
+    fobj.write(config)
+TypeError: write() argument must be str, not list
+
+2022-05-11 10:30:44,557 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': ['int lo 1, ip address 2.2.2.2, mask 255.255.255.0']} on 1 hosts
+2022-05-11 10:30:46,608 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 269, in _load_candidate_wrapper
+    tmp_file = self._create_tmp_file(source_config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 244, in _create_tmp_file
+    fobj.write(config)
+TypeError: write() argument must be str, not list
+
+2022-05-11 10:32:30,006 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': ['int lo 1 \n ip address 1.1.1.1 \n mask 255.255.255.0']} on 1 hosts
+2022-05-11 10:32:31,012 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 269, in _load_candidate_wrapper
+    tmp_file = self._create_tmp_file(source_config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 244, in _create_tmp_file
+    fobj.write(config)
+TypeError: write() argument must be str, not list
+
+2022-05-11 10:32:31,018 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': ['int lo 1 \n ip address 2.2.2.2 \n mask 255.255.255.0']} on 1 hosts
+2022-05-11 10:32:33,218 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 35, in napalm_configure
+    device.load_merge_candidate(filename=filename, config=configuration)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 316, in load_merge_candidate
+    return_status, msg = self._load_candidate_wrapper(
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 269, in _load_candidate_wrapper
+    tmp_file = self._create_tmp_file(source_config)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 244, in _create_tmp_file
+    fobj.write(config)
+TypeError: write() argument must be str, not list
+
+2022-05-11 10:32:59,510 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 1.1.1.1 \n mask 255.255.255.0'} on 1 hosts
+2022-05-11 10:33:10,089 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 43, in napalm_configure
+    device.commit_config()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 555, in commit_config
+    raise MergeConfigException(merge_error)
+napalm.base.exceptions.MergeConfigException: Configuration merge failed; automatic rollback attempted:
+
+ ip address 1.1.1.1 
+% Incomplete command.
+
+ mask 255.255.255.0
+   ^
+% Invalid input detected at '^' marker.
+
+50 bytes copied in 0.096 secs (521 bytes/sec)
+
+2022-05-11 10:33:10,094 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 2.2.2.2 \n mask 255.255.255.0'} on 1 hosts
+2022-05-11 10:33:23,669 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'napalm_configure' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_napalm/plugins/tasks/napalm_configure.py", line 43, in napalm_configure
+    device.commit_config()
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/napalm/ios/ios.py", line 555, in commit_config
+    raise MergeConfigException(merge_error)
+napalm.base.exceptions.MergeConfigException: Configuration merge failed; automatic rollback attempted:
+
+ ip address 2.2.2.2 
+% Incomplete command.
+
+ mask 255.255.255.0
+   ^
+% Invalid input detected at '^' marker.
+
+50 bytes copied in 0.088 secs (568 bytes/sec)
+
+2022-05-11 10:34:06,078 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 1.1.1.1 255.255.255.255'} on 1 hosts
+2022-05-11 10:34:13,997 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 2.2.2.2 255.255.255.255'} on 1 hosts
+2022-05-11 10:46:49,180 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'commands': ['show ip interface brief']} on 4 hosts
+2022-05-11 10:46:49,181 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:46:49,181 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:46:49,181 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:46:49,181 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:47:25,313 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'coonfig_string': ['show ip interface brief']} on 4 hosts
+2022-05-11 10:47:25,314 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:47:25,314 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:47:25,315 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:47:25,315 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+TypeError: netmiko_send_command() missing 1 required positional argument: 'command_string'
+
+2022-05-11 10:47:38,327 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': ['show ip interface brief']} on 4 hosts
+2022-05-11 10:47:39,174 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1485, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1644, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2022-05-11 10:47:39,938 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1485, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1644, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2022-05-11 10:47:40,617 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1485, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1644, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2022-05-11 10:47:40,761 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 32, in netmiko_send_command
+    result = net_connect.send_command(command_string, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/utilities.py", line 500, in wrapper_decorator
+    return func(self, *args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1485, in send_command
+    command_string = self.normalize_cmd(command_string)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1644, in normalize_cmd
+    command = command.rstrip()
+AttributeError: 'list' object has no attribute 'rstrip'
+
+2022-05-11 10:47:55,774 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip interface brief'} on 4 hosts
+2022-05-11 10:51:43,345 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo 1', 'ip address 1.1.1.1 255.255.255.255']} on 1 hosts
+2022-05-11 10:51:44,449 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo 1', 'ip address 2.2.2.2 255.255.255.255']} on 1 hosts
+2022-05-11 10:55:08,542 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 6 hosts
+2022-05-11 11:15:09,679 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': ['config/R1_Bat_A.conf']} on 1 hosts
+2022-05-11 11:15:10,453 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1808, in send_config_from_file
+    with io.open(config_file, "rt", encoding="utf-8") as cfg_file:
+TypeError: expected str, bytes or os.PathLike object, not list
+
+2022-05-11 11:15:10,455 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': ['config/R2_Bat_A.conf']} on 1 hosts
+2022-05-11 11:15:11,975 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1808, in send_config_from_file
+    with io.open(config_file, "rt", encoding="utf-8") as cfg_file:
+TypeError: expected str, bytes or os.PathLike object, not list
+
+2022-05-11 11:15:25,912 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': ['config/R1_Bat_A.conf']} on 1 hosts
+2022-05-11 11:15:26,648 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-A': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1808, in send_config_from_file
+    with io.open(config_file, "rt", encoding="utf-8") as cfg_file:
+TypeError: expected str, bytes or os.PathLike object, not list
+
+2022-05-11 11:15:26,655 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': ['config/R2_Bat_A.conf']} on 1 hosts
+2022-05-11 11:15:28,139 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-A': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1808, in send_config_from_file
+    with io.open(config_file, "rt", encoding="utf-8") as cfg_file:
+TypeError: expected str, bytes or os.PathLike object, not list
+
+2022-05-11 11:15:28,142 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': ['config/R1_Bat_B.conf']} on 1 hosts
+2022-05-11 11:15:30,189 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1808, in send_config_from_file
+    with io.open(config_file, "rt", encoding="utf-8") as cfg_file:
+TypeError: expected str, bytes or os.PathLike object, not list
+
+2022-05-11 11:15:51,184 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:15:53,001 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:15:58,458 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:16:02,968 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:20:08,210 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:20:09,751 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:20:15,238 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:20:19,475 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:20:19,483 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 11:20:23,882 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:20:23,887 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:20:31,787 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:28:11,398 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:28:12,895 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:28:17,909 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:28:22,550 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:28:22,552 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 11:28:27,487 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:28:27,489 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:28:35,836 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:32:18,601 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:32:20,109 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:32:25,535 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:32:30,341 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:32:30,346 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 11:32:35,106 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:32:35,108 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:32:43,492 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:36:59,408 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:37:00,957 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:37:06,087 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:37:10,708 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:37:10,714 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 11:37:15,623 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:37:15,625 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:37:24,402 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:46:34,499 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:46:36,138 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:46:41,254 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:46:45,509 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:48:42,432 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:48:43,955 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 11:48:49,112 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 11:48:53,650 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:48:53,652 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 11:48:58,436 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 11:48:58,438 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 11:49:06,647 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 12:05:29,608 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 12:05:33,663 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 12:05:38,992 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 12:05:43,523 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 12:05:43,525 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 12:05:48,042 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 12:05:48,044 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 12:05:55,894 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 12:11:02,981 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 12:11:04,568 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 12:11:09,716 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 12:11:14,252 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 12:11:14,255 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 12:11:18,866 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1912, in send_config_set
+    new_output = self.read_until_pattern(pattern=re.escape(cmd.strip()))
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 12:11:18,873 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 12:11:27,465 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts
+2022-05-11 15:28:27,211 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:28:27,268 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:29:55,182 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:29:55,185 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:29:55,185 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:30:59,856 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:30:59,859 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:30:59,860 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 6 hosts
+2022-05-11 15:30:59,866 -  nornir.core -     INFO -        run() - Running task 'hello_world' with args {} on 4 hosts
+2022-05-11 15:30:59,868 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['show ip interface brief']} on 4 hosts
+2022-05-11 15:31:03,049 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['get_arp_table']} on 2 hosts
+2022-05-11 15:31:07,673 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 1.1.1.1 255.255.255.255'} on 1 hosts
+2022-05-11 15:31:14,777 -  nornir.core -     INFO -        run() - Running task 'napalm_configure' with args {'configuration': 'int lo 1 \n ip address 2.2.2.2 255.255.255.255'} on 1 hosts
+2022-05-11 15:31:25,365 -  nornir.core -     INFO -        run() - Running task 'napalm_cli' with args {'commands': ['write']} on 6 hosts
+2022-05-11 15:31:29,250 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip interface brief'} on 4 hosts
+2022-05-11 15:31:32,049 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo 1', 'ip address 1.1.1.1 255.255.255.255']} on 1 hosts
+2022-05-11 15:31:32,250 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_commands': ['int lo 1', 'ip address 2.2.2.2 255.255.255.255']} on 1 hosts
+2022-05-11 15:31:32,864 -  nornir.core -     INFO -        run() - Running task 'netmiko_save_config' with args {} on 6 hosts
+2022-05-11 15:31:38,267 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_A.conf'} on 1 hosts
+2022-05-11 15:31:39,425 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_A.conf'} on 1 hosts
+2022-05-11 15:31:42,969 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R1_Bat_B.conf'} on 1 hosts
+2022-05-11 15:31:45,617 - nornir.core.task -    ERROR -      start() - Host 'R1-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 15:31:45,623 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/R2_Bat_B.conf'} on 1 hosts
+2022-05-11 15:31:48,227 - nornir.core.task -    ERROR -      start() - Host 'R2-CPE-BAT-B': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 40, in netmiko_send_config
+    result = net_connect.send_config_from_file(config_file=config_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1809, in send_config_from_file
+    return self.send_config_set(cfg_file, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 1921, in send_config_set
+    new_output = self.read_until_pattern(pattern=pattern)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 655, in read_until_pattern
+    return self._read_channel_expect(*args, **kwargs)
+  File "/home/cpe/.local/share/virtualenvs/TP-03-D8SGa-7O/lib/python3.9/site-packages/netmiko/base_connection.py", line 575, in _read_channel_expect
+    raise EOFError("Channel stream closed by remote device.")
+EOFError: Channel stream closed by remote device.
+
+2022-05-11 15:31:48,234 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_A.conf'} on 1 hosts
+2022-05-11 15:31:55,310 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_config' with args {'config_file': 'config/ESW1_Bat_B.conf'} on 1 hosts

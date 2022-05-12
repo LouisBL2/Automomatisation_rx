@@ -1,0 +1,22 @@
+configure terminal
+{% for vlan in vlans %}
+vlan {{vlan.vlan_id}}
+exit
+{% endfor %}
+
+{% for interface in interfaces %}
+interface {{ interface.name}}
+switchport mode {{interface.mode}}
+{% if "trunk" == interface.mode %}
+switchport trunk allowed vlan all
+{% endif %}
+{% if "trunk" != interface.mode %}
+switchport access vlan {{ interface.vlan_id}}
+{% endif %}
+no shutdown
+exit
+{% endfor %}
+{% for interface in interface %}
+
+
+{% endfor %}

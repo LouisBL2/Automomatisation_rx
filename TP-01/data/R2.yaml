@@ -1,0 +1,20 @@
+hostname: 'CE_LYON_R01'
+interfaces:
+  -
+    name: 'gi3/0.10'
+    description: 'Gateway interface for student LAN'
+    ip : '172.16.50.254'
+    mask: '255.255.255.0'
+    vlan_id: '10'
+  - 
+    name: 'gi3/0.20'
+    description: 'Gateway interface for teacher LAN'
+    ip : '172.16.60.254'
+    mask: '255.255.255.0'
+    vlan_id: '20'
+  -
+    name: 'gi3/0.99'
+    description: 'Gateway interface for admin LAN'
+    ip : '172.16.100.254'
+    mask: '255.255.255.192'
+    vlan_id: '99'

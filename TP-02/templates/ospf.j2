@@ -1,0 +1,5 @@
+router ospf 1
+{% for network in networks %} 
+    network {{network.ip}} {{network.mask}} area 0
+{% endfor %}
+end

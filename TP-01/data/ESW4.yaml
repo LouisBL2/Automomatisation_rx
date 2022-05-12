@@ -1,0 +1,13 @@
+hostname: 'CE_LYON_R01'
+interfaces:
+  -
+    name: 'fa1/1'
+    mode: 'access'
+    vlan_id : '10'
+  -
+    name: 'fa1/2'
+    mode: 'access'
+    vlan_id : '20'
+  -
+
+    

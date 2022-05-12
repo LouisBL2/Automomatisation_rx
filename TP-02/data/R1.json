@@ -1,0 +1,12 @@
+{
+    "interfaces":[
+        {
+            "name":"loopback 1",
+            "description": "loopback interface from paramiko",
+            "ip":"192.168.1.1",
+            "mask":"255.255.255.255",
+            "is_sub_int":"FALSE"
+
+        }
+    ]
+}
